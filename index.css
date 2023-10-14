@@ -1,0 +1,145 @@
+body {
+    padding-top: 60px;
+    background-color: white;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body p {
+    color: var(--ACT-Black, #313131);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.57143rem;
+    /* 157.143% */
+}
+
+/* .navbar-nav {
+    display: flex;
+    width: 25.71429rem;
+    padding: 0.57143rem 1.71429rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1.14286rem;
+    flex: 1 0 0;
+} */
+
+.nav-link {
+    color: white;
+}
+
+/* hero section */
+.row.align-items-center.hero-section {
+    position: relative;
+    background-color: #EC4343;
+
+}
+
+.hero-text h1 {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 1.42857rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-text p {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 1.14286rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857rem;
+}
+
+.hero-img-mobile {
+    position: relative;
+}
+
+.hero-img-mobile img {
+    width: 100%;
+}
+
+.text-button {
+    display: inline-block;
+    border-bottom: 1.8px solid #EC4343;
+    /* Add a 2px thick underline with your desired color */
+    cursor: pointer;
+    /* Show hand cursor on hover to indicate a link */
+}
+
+.icon {
+    display: inline-block;
+    width: 14px;
+    /* Set the width and height of the icon */
+    height: 14px;
+    background-image: url('imgs/forward-icon.png');
+    /* Set the path to your local icon image */
+    background-size: cover;
+    margin-right: 4px;
+    /* Add spacing between the icon and text */
+}
+
+.text-button a {
+    color: #EC4343;
+    /* Text color */
+    text-decoration: none;
+    /* Remove the default underline */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-button:hover {
+    border-bottom: 1.8px solid transparent;
+    /* Hide the underline on hover */
+}
+
+.divider1 {
+    background-color: #C5C5C5;
+    height: 2px;
+    /* Adjust the height as needed */
+    width: 100%;
+    margin: 20px 0;
+    /* Add margin for spacing if desired */
+}
+
+
+.country-info h3 {
+    color: var(--ACT-Black, #313131);
+    font-size: 1.14286rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.divider2 {
+    background-color: #C5C5C5;
+    height: 5px;
+    /* Adjust the height as needed */
+    width: 100%;
+    margin: 20px 0;
+    /* Add margin for spacing if desired */
+}
+/* yt tutorial */
+
+.bg-dark {
+    background-image: linear-gradient(rgba(0, 0, 0 0.9), rgba(0, 0, 0 0.9));
+}
+
+
+@media (max-width: 500px) {
+    body {
+        padding-top: 210px;
+    }
+}
