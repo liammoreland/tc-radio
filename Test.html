@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Authentication</title>
+</head>
+<body>
+    <button id="spotify-login-button">
+        Login with Spotify
+    </button>
+    <script>
+        // Spotify App credentials//
+        var client_id = 'dd2bb48637cd48c08c830b0b05bd5d8a'; 
+        var redirect_uri = 'http://localhost:8888/callback'; 
+
+        var scope = 'user-read-private user-read-email';
+     
+        function generateRandomString(length) {
+            var text = '';
+            var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+            for (var i = 0; i < length; i++) {
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            }
+
+            return text;
+        }
+
+     
+        document.getElementById('spotify-login-button').addEventListener('click', function() {
+            var state = generateRandomString(16);
+
+            // Store the state in local storage or as needed for security checks
+
+            // Construct the Spotify authentication URL
+            var url = 'https://accounts.spotify.com/authorize';
+            url += '?response_type=token';
+            url += '&client_id=' + encodeURIComponent(client_id);
+            url += '&scope=' + encodeURIComponent(scope);
+            url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
+            url += '&state=' + encodeURIComponent(state);
+
+            // Redirect the user to the Spotify authentication page
+            window.location = url;
+        });
+    </script>
+</body>
+</html>
